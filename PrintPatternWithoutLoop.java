@@ -24,12 +24,9 @@ class PrintPatternWithoutLoop {
         pattern(n - 1, i + 1); // recursively calling pattern method
     }
 
-    // Driver code
     public static void main(String[] args) {
 
         int n = 5;
         pattern(n, 1);
     }
 }
-
-// This code is contributed by ajit.
