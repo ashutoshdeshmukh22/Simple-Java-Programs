@@ -1,7 +1,11 @@
+import java.util.*;
 
 public class SumOfPrimeNo {
     public static void main(String[] args) {
-        int n = 15, sum = 0, i = 1, j;
+        int n, sum = 0, i = 1, j;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter n");
+        n = sc.nextInt();
         int temp = n;
         while (n != 0) {
             int count = 0;
@@ -16,6 +20,6 @@ public class SumOfPrimeNo {
             }
             i++;
         }
-        System.out.println("Sum of first " + temp + " Prime numbers is " + sum);
+        System.out.println("Sum of " + temp + " Prime numbers is " + sum);
     }
 }

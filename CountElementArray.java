@@ -12,7 +12,7 @@ public class CountElementArray {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        sc.close();
+
         System.out.println("Enter The Element Which Frequency To Check ");
         int chkno = sc.nextInt();
         for (int i = 0; i <= arr.length - 1; i++) {

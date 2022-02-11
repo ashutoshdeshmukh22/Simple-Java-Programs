@@ -46,3 +46,5 @@ Implement above abstract method in MyBook class. Call the method setTitle(“The
 17. Declare the integer array with 10 numbers. Generate 2 new arrays Prime and NonPrime with prime and non-prime numbers from main array.
 
 18. Write an application to identify and move all 0's to the end of an array. Maintain the sequence of the other (non-zero) array elements.
+
+19. Exception Handeling Demonstratation
