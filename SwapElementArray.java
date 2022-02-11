@@ -1,18 +1,36 @@
+import java.util.*;
+
 class SwapElementArray {
     public static void main(String[] args) {
-        int temp, i;
+        Scanner sc = new Scanner(System.in);
 
-        int array[] = { 10, 20, 30, 40, 50 };
+        int temp, i, n;
 
-        for (i = 0; i <= 5; i += 2) { // increament position by 2
+        // Array Elements Must Be in Even Quantity
+        System.out.println("Enter Total Number Of Elements :- ");
+        n = sc.nextInt();
+
+        // Initializing an array
+        int[] array = new int[n];
+
+        // Reading Array Elements Fron User
+        System.out.println("Enter Array Elements :- ");
+        for (i = 0; i < n; i++) {
+            array[i] = sc.nextInt();
+        }
+
+        // Swapping Elements
+        for (i = 0; i < n; i += 2) {
             temp = array[i];
             array[i] = array[i + 1];
             array[i + 1] = temp;
         }
         System.out.println("Elements After Swapping Adjacent Elements :- ");
 
-        for (i = 0; i <= 5; i++) {
+        for (i = 0; i < n; i++) {
             System.out.println(array[i]);
         }
+
+        sc.close();
     }
 }
